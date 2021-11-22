@@ -1,0 +1,33 @@
+﻿<Window x:Class="ComputerClub.Account"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ComputerClub"
+        mc:Ignorable="d"
+        Title="Account" Height="611" Width="496" WindowStartupLocation="Manual" WindowState="Minimized" WindowStyle="None">
+    <Window.Background>
+        <ImageBrush ImageSource="Pages\img\Frame 1.png"/>
+    </Window.Background>
+    <Border CornerRadius="20">
+        <Grid>
+            <Image Margin="176,96,179,369" Source="Pages\img\account_circle (1).png" Stretch="Fill"/>
+            <TextBox x:Name="LoginTB" HorizontalAlignment="Left" Height="34" Margin="110,293,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="266" Background="White" BorderBrush="White" Foreground="#FF5852C5" TextChanged="TextBox_TextChanged" FontSize="14"/>
+            <Button Content="" HorizontalAlignment="Left" Margin="110,415,0,0" VerticalAlignment="Top" Width="133" Height="40" BorderBrush="{x:Null}" Click="Avtorization_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Pages\img\Group 6.png"/>
+                </Button.Background>
+            </Button>
+            <Label Content="Войдите в аккаунт" HorizontalAlignment="Left" Margin="162,219,0,0" VerticalAlignment="Top" Width="162" Foreground="White" FontSize="18"/>
+            <Button Content="" HorizontalAlignment="Left" Margin="249,415,0,0" VerticalAlignment="Top" Width="127" Height="40" BorderBrush="{x:Null}" Click="Button_Click_1">
+                <Button.Background>
+                    <ImageBrush ImageSource="Pages\img\registration.png"/>
+                </Button.Background>
+            </Button>
+            <PasswordBox x:Name="PasswordPB" HorizontalAlignment="Left" Margin="110,346,0,0" VerticalAlignment="Top" Width="266" Height="34" BorderBrush="White"/>
+            <Label Content="Email" HorizontalAlignment="Left" Margin="110,267,0,0" VerticalAlignment="Top" Width="40" Foreground="#FFD8C6FF"/>
+            <Label Content="Password" HorizontalAlignment="Left" Margin="110,324,0,0" VerticalAlignment="Top" Width="61" Foreground="#FFD8C6FF"/>
+        </Grid>
+    </Border>
+
+</Window>

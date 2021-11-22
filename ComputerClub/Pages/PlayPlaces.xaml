@@ -1,0 +1,237 @@
+﻿<Page x:Class="ComputerClub.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ComputerClub"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="700"
+      Title="PlayPlaces">
+    <Page.Resources>
+        <Style x:Key="FocusVisual">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Rectangle Margin="2" SnapsToDevicePixels="true" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" StrokeThickness="1" StrokeDashArray="1 2"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <SolidColorBrush x:Key="Button.Static.Background" Color="#FFDDDDDD"/>
+        <SolidColorBrush x:Key="Button.Static.Border" Color="#FF707070"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FFBEE6FD"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF3C7FB1"/>
+        <SolidColorBrush x:Key="Button.Pressed.Background" Color="#FFC4E5F6"/>
+        <SolidColorBrush x:Key="Button.Pressed.Border" Color="#FF2C628B"/>
+        <SolidColorBrush x:Key="Button.Disabled.Background" Color="#FFF4F4F4"/>
+        <SolidColorBrush x:Key="Button.Disabled.Border" Color="#FFADB2B5"/>
+        <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="#FF838383"/>
+        <Style x:Key="ButtonStyle1" TargetType="{x:Type Button}">
+            <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+            <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="OpacityMask" Value="White"/>
+        </Style>
+    </Page.Resources>
+
+    <Grid Background="AntiqueWhite">
+        <Grid.RowDefinitions>
+            <RowDefinition>
+            </RowDefinition>
+            <RowDefinition>
+            </RowDefinition>
+            <RowDefinition>
+            </RowDefinition>
+            <RowDefinition>
+            </RowDefinition>
+            <RowDefinition>
+            </RowDefinition>
+            <RowDefinition>
+            </RowDefinition>
+            <RowDefinition>
+            </RowDefinition>
+            <RowDefinition>
+            </RowDefinition>
+            <RowDefinition>
+            </RowDefinition>
+            <RowDefinition>
+            </RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition>
+            </ColumnDefinition>
+            <ColumnDefinition>
+            </ColumnDefinition>
+            <ColumnDefinition>
+            </ColumnDefinition>
+            <ColumnDefinition>
+            </ColumnDefinition>
+            <ColumnDefinition>
+            </ColumnDefinition>
+            <ColumnDefinition>
+            </ColumnDefinition>
+            <ColumnDefinition>
+            </ColumnDefinition>
+            <ColumnDefinition>
+            </ColumnDefinition>
+            <ColumnDefinition>
+            </ColumnDefinition>
+            <ColumnDefinition>
+            </ColumnDefinition>
+            <ColumnDefinition>
+            </ColumnDefinition>
+            <ColumnDefinition>
+            </ColumnDefinition>
+            <ColumnDefinition>
+            </ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image Margin="-10,-13,-5,-1"  Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.42"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Source="img\ss.png" Stretch="Fill" AutomationProperties.IsColumnHeader="True" Grid.ColumnSpan="13" Grid.RowSpan="10" Margin="-10,0,-0.308,-33"/>
+        <Button x:Name="sit1Stansart" Content="1" Grid.Column="3" Grid.Row="1" Height="50" Width="50" Click="sit1_Click" Background="White" BorderBrush="{x:Null}" Foreground="#FF444ABF">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="sit2Stansart" Content="2" Grid.Column="4" Grid.Row="1" Height="50" Width="50" Click="sit2Stansart_Click" Background="White" BorderBrush="{x:Null}" Foreground="#FF444ABF">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="sit3Stansart" Content="3" Grid.Column="5" Grid.Row="1" Height="50" Width="50" Click="sit3Stansart_Click" Background="White" BorderBrush="{x:Null}" Foreground="#FF444ABF">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="sit4Stansart" Content="4" Grid.Column="6" Grid.Row="1" Height="50" Width="50" Click="sit4Stansart_Click" Background="White" BorderBrush="{x:Null}" Foreground="#FF444ABF">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="sit5Stansart" Content="5" Grid.Column="7" Grid.Row="1" Height="50" Width="50" Click="sit5Stansart_Click" Background="White" BorderBrush="{x:Null}" Foreground="#FF444ABF">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="sit6Stansart" Content="6" Grid.Column="3" Grid.Row="2" Height="50" Width="50" Click="sit6Stansart_Click" Background="White" BorderBrush="{x:Null}" Foreground="#FF444ABF">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="sit7Stansart" Content="7" Grid.Column="4" Grid.Row="2" Height="50" Width="50" Click="sit7Stansart_Click" Background="White" BorderBrush="{x:Null}" Foreground="#FF444ABF">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="sit8Stansart" Content="8" Grid.Column="5" Grid.Row="2" Height="50" Width="50" Click="sit8Stansart_Click" Background="White" BorderBrush="{x:Null}" Foreground="#FF444ABF">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="sit9Stansart" Content="9" Grid.Column="6" Grid.Row="2" Height="50" Width="50" Click="sit9Stansart_Click" Background="White" BorderBrush="{x:Null}" Foreground="#FF444ABF">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="sit10Stansart" Content="10" Grid.Column="7" Grid.Row="2" Height="50" Width="50" Click="sit10Stansart_Click" Background="White" BorderBrush="{x:Null}" Foreground="#FF444ABF">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="sit1Vip" Content="1" Grid.Column="3" Grid.Row="4" Height="50" Width="50" Click="sit1Vip_Click" Background="White" BorderBrush="{x:Null}" Foreground="#FF444ABF">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="sit2Vip" Content="2" Grid.Column="4" Grid.Row="4" Height="50" Width="50" Click="sit2Vip_Click" Background="White" BorderBrush="{x:Null}" Foreground="#FF444ABF">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="sit3Vip" Content="3" Grid.Column="5" Grid.Row="4" Height="50" Width="50" Click="sit3Vip_Click" Background="White" BorderBrush="{x:Null}" Foreground="#FF444ABF">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="sit4Vip" Content="4" Grid.Column="6" Grid.Row="4" Height="50" Width="50" Click="sit4Vip_Click" Background="White" BorderBrush="{x:Null}" Foreground="#FF444ABF">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="sit5Vip" Content="5" Grid.Column="7" Grid.Row="4" Height="50" Width="50" Click="sit5Vip_Click" Background="White" BorderBrush="{x:Null}" Foreground="#FF444ABF">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="sit1Ultra" Content="1" Grid.Column="4" Grid.Row="6" Height="50" Width="50" Click="sit1Ultra_Click" Background="White" BorderBrush="{x:Null}" Foreground="#FF444ABF">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="sit2Ultra" Content="2" Grid.Column="5" Grid.Row="6" Height="50" Width="50" Click="sit2Ultra_Click" Background="White" BorderBrush="{x:Null}" Foreground="#FF444ABF">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="sit3Ultra" Content="3" Grid.Column="6" Grid.Row="6" Height="50" Width="50" Click="sit3Ultra_Click" Background="White" BorderBrush="{x:Null}" Foreground="#FF444ABF">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Rectangle Grid.ColumnSpan="11" Fill="#FFCCCCFF" HorizontalAlignment="Left" Height="1" Margin="26.154,17,0,0" Grid.Row="3" VerticalAlignment="Top" Width="540" Grid.Column="2"/>
+        <Label Grid.Column="9" Grid.Row="2" Content="STANDART" FontSize="25" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="3" Margin="23.308,19,9.692,28" Grid.RowSpan="2"/>
+        <Rectangle Grid.ColumnSpan="11" Fill="#FFCCCCFF" HorizontalAlignment="Left" Height="1" Margin="26.154,26,0,0" Grid.Row="5" VerticalAlignment="Top" Width="540" Grid.Column="2"/>
+        <Label Grid.Column="10" Grid.Row="4" Content="VIP" FontSize="25" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="10.308,30,51.692,17" Grid.RowSpan="2"/>
+        <Rectangle Grid.ColumnSpan="11" Fill="#FFCCCCFF" HorizontalAlignment="Left" Height="1" Margin="24.154,34,0,0" Grid.Row="7" VerticalAlignment="Top" Width="542" Grid.Column="2"/>
+        <Label Grid.Column="9" Grid.Row="6" Content="ULTRA" FontSize="25" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="3" Margin="46.308,38,28.692,9" Width="87" Grid.RowSpan="2"/>
+    </Grid>
+</Page>

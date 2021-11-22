@@ -1,0 +1,51 @@
+﻿<Window x:Class="ComputerClub.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ComputerClub"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="750" Width="1280"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True" Loaded="Window_Loaded">
+    <Border>
+        <Border.Background>
+            <LinearGradientBrush EndPoint="0.504,1.5" StartPoint="0.504,0.03">
+                <GradientStop Color="#7367FF" Offset="0"/>
+                <GradientStop Color="#20264A" Offset="0.567"/>
+            </LinearGradientBrush>
+        </Border.Background>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="27*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel HorizontalAlignment="Left" Height="750" VerticalAlignment="Top" Width="200
+                        " Background="#FF20264A">
+
+            </StackPanel>
+
+            <Image Height="113" Source="Pages\img\account_circle.png" Margin="-494,37,592,600" Grid.ColumnSpan="2"/>
+            <Label Content="User Name" HorizontalAlignment="Left" Margin="53,150,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" FontSize="16"/>
+            <Button x:Name="BronMesta_Btn" Content="БРОНЬ МЕСТА" HorizontalAlignment="Left" Margin="0,213,0,0" VerticalAlignment="Top" Width="200" Height="49" FontSize="16" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" AutomationProperties.Name="BtnBron" Click="Button_Click_1"/>
+            <Button Content="О НАС" HorizontalAlignment="Left" Margin="0,262,0,0" VerticalAlignment="Top" Width="200" Height="49" Foreground="White" BorderBrush="{x:Null}" Background="{x:Null}" FontSize="16" Click="Button_Click" AutomationProperties.Name="BtnAbout"/>
+            <Button x:Name="PriceBTN" Content="ПРАЙС" HorizontalAlignment="Left" Margin="0,311,0,0" VerticalAlignment="Top" Width="200" Height="49" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" FontSize="16" AutomationProperties.Name="BtnPrice" Click="PriceBTN_Click"/>
+            <Button 
+                x:Name="OrdersBtn"
+                Height="20"
+                Content=" заказы"
+                Width="200" Click="OrdersBtn_Click"/>
+
+            <Frame x:Name="MainFrame" Grid.Column="1" NavigationUIVisibility="Hidden" Navigated="MainFrame_Navigated"/>
+            <Image Margin="14,276,164,451" Source="Pages\img\znak_vop.png" Stretch="Fill"/>
+            <Image Margin="17,323,167,401" Source="Pages\img\dallar.png" Stretch="Fill"/>
+            <Image Margin="17,229,164,501" Source="Pages\img\galka.png" Stretch="Fill"/>
+
+        </Grid>
+
+    </Border>
+</Window>

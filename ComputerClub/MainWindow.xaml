@@ -36,9 +36,10 @@
             <Button x:Name="PriceBTN" Content="ПРАЙС" HorizontalAlignment="Left" Margin="0,311,0,0" VerticalAlignment="Top" Width="200" Height="49" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" FontSize="16" AutomationProperties.Name="BtnPrice" Click="PriceBTN_Click"/>
             <Button 
                 x:Name="OrdersBtn"
-                Height="20"
-                Content=" заказы"
-                Width="200" Click="OrdersBtn_Click"/>
+                Content="ЗАКАЗЫ"
+                Width="200" Click="OrdersBtn_Click" Margin="0,360,0,340"
+                Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" FontSize="16
+                "/>
 
             <Frame x:Name="MainFrame" Grid.Column="1" NavigationUIVisibility="Hidden" Navigated="MainFrame_Navigated"/>
             <Image Margin="14,276,164,451" Source="Pages\img\znak_vop.png" Stretch="Fill"/>

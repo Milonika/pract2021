@@ -21,7 +21,7 @@ namespace ComputerClub.Db
         public Nullable<System.DateTime> EndDate { get; set; }
         public int ID_Client { get; set; }
         public int TariffID { get; set; }
-        public Nullable<bool> booked { get; set; }
+        public Nullable<bool> IsBooked { get; set; }
     
         public virtual Client Client { get; set; }
         public virtual Employees Employees { get; set; }

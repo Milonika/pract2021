@@ -27,7 +27,7 @@
           <Property Name="EndDate" Type="datetime" />
           <Property Name="ID_Client" Type="int" Nullable="false" />
           <Property Name="TariffID" Type="int" Nullable="false" />
-          <Property Name="booked" Type="bit" />
+          <Property Name="IsBooked" Type="bit" />
         </EntityType>
         <EntityType Name="Client">
           <Key>
@@ -162,6 +162,7 @@
           </Key>
           <Property Name="ID" Type="int" Nullable="false" />
           <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="TotalHour" Type="int" />
           <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
           <Property Name="Price" Type="decimal" Precision="18" Scale="0" Nullable="false" />
           <Property Name="GameZomeID" Type="int" Nullable="false" />
@@ -469,7 +470,7 @@
           <Property Name="EndDate" Type="DateTime" Precision="3" />
           <Property Name="ID_Client" Type="Int32" Nullable="false" />
           <Property Name="TariffID" Type="Int32" Nullable="false" />
-          <Property Name="booked" Type="Boolean" />
+          <Property Name="IsBooked" Type="Boolean" />
           <NavigationProperty Name="Client" Relationship="Self.FK_Booking_Client" FromRole="Booking" ToRole="Client" />
           <NavigationProperty Name="Employees" Relationship="Self.FK_Booking_Employees" FromRole="Booking" ToRole="Employees" />
           <NavigationProperty Name="Employees1" Relationship="Self.FK_Booking_Employees1" FromRole="Booking" ToRole="Employees" />
@@ -632,6 +633,7 @@
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" />
           <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TotalHour" Type="Int32" />
           <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Price" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
           <Property Name="GameZomeID" Type="Int32" Nullable="false" />
@@ -940,7 +942,7 @@
                 <ScalarProperty Name="EndDate" ColumnName="EndDate" />
                 <ScalarProperty Name="ID_Client" ColumnName="ID_Client" />
                 <ScalarProperty Name="TariffID" ColumnName="TariffID" />
-                <ScalarProperty Name="booked" ColumnName="booked" />
+                <ScalarProperty Name="IsBooked" ColumnName="IsBooked" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -1089,6 +1091,7 @@
               <MappingFragment StoreEntitySet="Tariff">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="TotalHour" ColumnName="TotalHour" />
                 <ScalarProperty Name="Description" ColumnName="Description" />
                 <ScalarProperty Name="Price" ColumnName="Price" />
                 <ScalarProperty Name="GameZomeID" ColumnName="GameZomeID" />

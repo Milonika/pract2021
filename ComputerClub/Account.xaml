@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ComputerClub"
         mc:Ignorable="d"
-        Title="Account" Height="611" Width="496" WindowStartupLocation="Manual" WindowState="Minimized" WindowStyle="None">
+        Title="Account" Height="611" Width="496" WindowStartupLocation="Manual" WindowStyle="None">
     <Window.Background>
         <ImageBrush ImageSource="Pages\img\Frame 1.png"/>
     </Window.Background>

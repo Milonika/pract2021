@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ComputerClub.Db;
 
 namespace ComputerClub.Pages
 {
@@ -20,12 +21,28 @@ namespace ComputerClub.Pages
     /// </summary>
     public partial class ConfirmOrderPAge : Page
     {
+        public Booking ggqqq;
         public ConfirmOrderPAge()
         {
             InitializeComponent();
-
-            OrdersLV.ItemsSource = MainWindow.db.Booking.ToList();
+            UpdateLV();
             
+        }
+
+        void UpdateLV()
+        {
+            OrdersLV.ItemsSource = MainWindow.db.Booking.ToList();
+
+        }
+        private void ConfirmOrder_Click(object sender, RoutedEventArgs e)
+        {
+            var gg = OrdersLV.SelectedItem as Booking;
+            this.ggqqq = MainWindow.db.Booking.Attach(gg);
+
+            ggqqq.IsBooked = true;
+            DataContext = this.ggqqq;
+            MainWindow.db.SaveChanges();
+            UpdateLV();
         }
     }
 }

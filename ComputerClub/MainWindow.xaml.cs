@@ -25,10 +25,25 @@ namespace ComputerClub
     {
 
         public static ComputerClubEntities db = new ComputerClubEntities();
+
+
+        public static Authorization user = new Authorization();
         public MainWindow()
         {
             InitializeComponent();
+            lblUserName.Content = user.User_Name;
+            CheckRols();
+
         }
+        public void CheckRols()
+        {
+            if(user.ID_Rols == 1)
+                OrdersBtn.Visibility = Visibility.Visible;
+            else
+                OrdersBtn.Visibility = Visibility.Hidden;
+        }
+
+
 
         private void Button_Click(object sender, RoutedEventArgs e) // О нас
         {
@@ -74,6 +89,10 @@ namespace ComputerClub
         private void OrdersBtn_Click(object sender, RoutedEventArgs e)
         {
             MainFrame.NavigationService.Navigate(new ConfirmOrderPAge());
+        }
+
+        private void OrdersBtn_Load(object sender, RoutedEventArgs e)
+        {
         }
     }
 }

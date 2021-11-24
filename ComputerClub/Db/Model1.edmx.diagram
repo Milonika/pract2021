@@ -4,21 +4,21 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="2eeb379c68034c17a33940eac25a02a4" Name="Diagram1" ZoomLevel="127">
-        <EntityTypeShape EntityType="ComputerClubModel.Authorization" Width="1.5" PointX="5.25" PointY="8.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="ComputerClubModel.Booking" Width="1.5" PointX="9.75" PointY="2.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="ComputerClubModel.Client" Width="1.5" PointX="7.5" PointY="8.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="ComputerClubModel.Cooler" Width="1.5" PointX="0.75" PointY="3.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="ComputerClubModel.CPU" Width="1.5" PointX="0.75" PointY="7.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="ComputerClubModel.Employees" Width="1.5" PointX="7.5" PointY="13" IsExpanded="true" />
-        <EntityTypeShape EntityType="ComputerClubModel.GameZone" Width="1.5" PointX="5.25" PointY="3.375" IsExpanded="true" />
+      <Diagram DiagramId="dc9d2f5a73f7413392f566eaf6568039" Name="Diagram1">
+        <EntityTypeShape EntityType="ComputerClubModel.Authorization" Width="1.5" PointX="5.25" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComputerClubModel.Booking" Width="1.5" PointX="9.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComputerClubModel.Client" Width="1.5" PointX="7.5" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComputerClubModel.Cooler" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComputerClubModel.CPU" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComputerClubModel.Employees" Width="1.5" PointX="7.5" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComputerClubModel.GameZone" Width="1.5" PointX="5.25" PointY="3.5" IsExpanded="true" />
         <EntityTypeShape EntityType="ComputerClubModel.GPU" Width="1.5" PointX="0.75" PointY="10.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="ComputerClubModel.Motherboard" Width="1.5" PointX="0.75" PointY="13.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="ComputerClubModel.PC" Width="1.5" PointX="3" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComputerClubModel.Motherboard" Width="1.5" PointX="0.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComputerClubModel.PC" Width="1.5" PointX="3" PointY="2.75" IsExpanded="true" />
         <EntityTypeShape EntityType="ComputerClubModel.PlayPlaces" Width="1.5" PointX="7.5" PointY="1.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="ComputerClubModel.PowerUnit" Width="1.5" PointX="0.75" PointY="16.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="ComputerClubModel.RAM" Width="1.5" PointX="0.75" PointY="19.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="ComputerClubModel.Rols" Width="1.5" PointX="3" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComputerClubModel.PowerUnit" Width="1.5" PointX="0.75" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComputerClubModel.RAM" Width="1.5" PointX="0.75" PointY="19.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComputerClubModel.Rols" Width="1.5" PointX="3" PointY="9.25" IsExpanded="true" />
         <EntityTypeShape EntityType="ComputerClubModel.sysdiagrams" Width="1.5" PointX="9.75" PointY="7.75" IsExpanded="true" />
         <EntityTypeShape EntityType="ComputerClubModel.Tariff" Width="1.5" PointX="7.5" PointY="4.625" IsExpanded="true" />
         <AssociationConnector Association="ComputerClubModel.FK_Authorization_Rols" ManuallyRouted="false" />

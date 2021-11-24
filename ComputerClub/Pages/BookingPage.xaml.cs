@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace ComputerClub.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для Booking.xaml
+    /// Логика взаимодействия для BookingPage.xaml
     /// </summary>
-    public partial class Booking : Page
+    public partial class BookingPage : Page
     {
-        public Booking( string mesto, string zona)
+        public BookingPage(string mesto, string zona)
         {
             InitializeComponent();
 

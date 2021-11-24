@@ -60,12 +60,14 @@ namespace ComputerClub
                     {
                         MessageBox.Show($"Привет Пользователь {user.User_Name}");
                         authUser = user;
+                        MainWindow.user = user;
                         MainWindow mainWindow = new MainWindow();
                         mainWindow.Show();
                     }
                     if (user.Password == PasswordPB.Password.Trim() && user.ID_Rols == 1)
                     {
                         MessageBox.Show($"Привет админ {user.User_Name}");
+                        MainWindow.user = user;
                         MainWindow mainWindow = new MainWindow();
                         mainWindow.Show();
                     }

@@ -22,6 +22,7 @@ namespace ComputerClub.Db
     
         public int ID { get; set; }
         public string Name { get; set; }
+        public Nullable<int> TotalHour { get; set; }
         public string Description { get; set; }
         public decimal Price { get; set; }
         public int GameZomeID { get; set; }

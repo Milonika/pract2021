@@ -30,7 +30,7 @@
             </StackPanel>
 
             <Image Height="113" Source="Pages\img\account_circle.png" Margin="-494,37,592,600" Grid.ColumnSpan="2"/>
-            <Label Content="User Name" HorizontalAlignment="Left" Margin="53,150,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" FontSize="16"/>
+            <Label x:Name="lblUserName" Content="User Name" HorizontalAlignment="Left" Margin="53,150,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" FontSize="16"/>
             <Button x:Name="BronMesta_Btn" Content="БРОНЬ МЕСТА" HorizontalAlignment="Left" Margin="0,213,0,0" VerticalAlignment="Top" Width="200" Height="49" FontSize="16" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" AutomationProperties.Name="BtnBron" Click="Button_Click_1"/>
             <Button Content="О НАС" HorizontalAlignment="Left" Margin="0,262,0,0" VerticalAlignment="Top" Width="200" Height="49" Foreground="White" BorderBrush="{x:Null}" Background="{x:Null}" FontSize="16" Click="Button_Click" AutomationProperties.Name="BtnAbout"/>
             <Button x:Name="PriceBTN" Content="ПРАЙС" HorizontalAlignment="Left" Margin="0,311,0,0" VerticalAlignment="Top" Width="200" Height="49" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" FontSize="16" AutomationProperties.Name="BtnPrice" Click="PriceBTN_Click"/>
@@ -39,7 +39,7 @@
                 Content="ЗАКАЗЫ"
                 Width="200" Click="OrdersBtn_Click" Margin="0,360,0,340"
                 Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" FontSize="16
-                "/>
+                " Loaded="OrdersBtn_Load"/>
 
             <Frame x:Name="MainFrame" Grid.Column="1" NavigationUIVisibility="Hidden" Navigated="MainFrame_Navigated"/>
             <Image Margin="14,276,164,451" Source="Pages\img\znak_vop.png" Stretch="Fill"/>

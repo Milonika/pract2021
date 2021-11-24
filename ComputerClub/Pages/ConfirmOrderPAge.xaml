@@ -85,7 +85,7 @@
                             TextWrapping="Wrap"
                             FontSize="8"/>
                         <TextBlock
-                            Text="{Binding Path = booked}" 
+                            Text="{Binding Path = IB}" 
                             Grid.Column="6" 
                             VerticalAlignment="Center" 
                             HorizontalAlignment="Left"
@@ -97,6 +97,14 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+
+        <Button
+            x:Name="ConfirmOrder" 
+            Grid.Column="1"
+            Grid.Row="3"
+            Margin="20"
+            Content="Подтвердить бронирование" Click="ConfirmOrder_Click"
+            />
 
     </Grid>
 </Page>

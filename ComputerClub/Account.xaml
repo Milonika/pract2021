@@ -2,15 +2,17 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ComputerClub"
         mc:Ignorable="d"
-        Title="Account" Height="611" Width="496" WindowStartupLocation="Manual" WindowStyle="None">
+        Title="Account" Height="611" Width="496" WindowStartupLocation="Manual" WindowStyle="None" MouseLeftButtonDown="Window_MouseLeftButtonDown">
     <Window.Background>
         <ImageBrush ImageSource="Pages\img\Frame 1.png"/>
     </Window.Background>
     <Border CornerRadius="20">
         <Grid>
+            <Button x:Name="GGCloseBtn" Content="Close" Margin="312,10,49,562" Click="GGCloseBtn_Click"/>
             <Image Margin="176,96,179,369" Source="Pages\img\account_circle (1).png" Stretch="Fill"/>
             <TextBox x:Name="LoginTB" HorizontalAlignment="Left" Height="34" Margin="110,293,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="266" Background="White" BorderBrush="White" Foreground="#FF5852C5" TextChanged="TextBox_TextChanged" FontSize="14"/>
             <Button Content="" HorizontalAlignment="Left" Margin="110,415,0,0" VerticalAlignment="Top" Width="133" Height="40" BorderBrush="{x:Null}" Click="Avtorization_Click">
